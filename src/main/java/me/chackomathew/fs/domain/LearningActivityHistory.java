@@ -70,7 +70,7 @@ public class LearningActivityHistory {
     @Column(name = "course_duration")
     private Integer courseDuration;
 
-    @Column(name = "learning_time")
+    @Column(name = "course_learning_hours")
     private Integer courseLearningHours;
 
 }

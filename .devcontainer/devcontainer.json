@@ -9,9 +9,14 @@
 		"vscode": {
 			"extensions": [
 				"ms-azuretools.vscode-docker",
-				"vscjava.vscode-java-pack"
+				"vscjava.vscode-java-pack",
+				"Pivotal.vscode-spring-boot",
+				"Pivotal.vscode-boot-dev-pack"
 			]
 		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.

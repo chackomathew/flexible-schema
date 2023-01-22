@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<flexible-schema>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "me.chackomathew.fs.Application",
+            "projectName": "flexible-schema",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

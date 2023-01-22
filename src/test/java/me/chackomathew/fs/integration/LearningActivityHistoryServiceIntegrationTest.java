@@ -28,10 +28,10 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 public class LearningActivityHistoryServiceIntegrationTest {
 
     @Container
-    private static final PostgreSQLContainer POSTGRES_SQL_CONTAINER = new PostgreSQLContainer("postgres:13")
-            .withDatabaseName("test-db")
-            .withUsername("user")
-            .withPassword("pass");
+    private static final PostgreSQLContainer POSTGRES_SQL_CONTAINER = new PostgreSQLContainer("postgres:latest")
+            .withDatabaseName("postgres")
+            .withUsername("postgres")
+            .withPassword("password");
 
     @BeforeAll
     static void startContainer() {
@@ -49,7 +49,7 @@ public class LearningActivityHistoryServiceIntegrationTest {
     @Test
     public void findTotalLearningHoursByStudentTest() {
         int studentId = 1;
-        int expectedTotalHours = 120;
+        int expectedTotalHours = 10;
 
         int totalHours = learningActivityHistoryService.findTotalLearningHoursByStudent(studentId);
 

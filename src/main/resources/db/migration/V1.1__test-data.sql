@@ -1,6 +1,6 @@
 INSERT INTO learning_activity_history (activity_name, activity_type, activity_date, activity_duration, activity_notes,
             student_id, plan_name, plan_description, plan_learning_hours, plan_content_type,
-            course_id, course_name, course_description, course_mentor, course_duration, learning_time)
+            course_id, course_name, course_description, course_mentor, course_duration, course_learning_hours)
 VALUES ('CREATE_LEARNING_PLAN', 'PLAN', '2022-01-01 10:00:00', NULL, 'Created a new learning plan',
             1, 'Career Development', 'This plan is focused on developing skills for a specific career path', 120, 'Career',
              NULL, NULL, NULL, NULL, NULL, NULL),
@@ -9,7 +9,7 @@ VALUES ('CREATE_LEARNING_PLAN', 'PLAN', '2022-01-01 10:00:00', NULL, 'Created a 
             1, 'Introduction to Programming', 'This course covers the basics of programming concepts', 'John Smith', 40, NULL),
        ('COURSE_LEARNING_PROGRESS', 'PROGRESS', '2022-01-03 14:00:00', 30, 'Completed 30 minutes of the Introduction to Programming course',
             1, 'Career Development', 'This plan is focused on developing skills for a specific career path', 120, 'Career',
-            1, 'Introduction to Programming', 'This course covers the basics of programming concepts', 'John Smith', 40, '2022-01-03 14:30:00'),
+            1, 'Introduction to Programming', 'This course covers the basics of programming concepts', 'John Smith', 40, 10),
        ('CREATE_LEARNING_PLAN', 'PLAN', '2022-01-01 10:00:00', NULL, 'Created a new learning plan',
                    2, 'Career Development', 'This plan is focused on developing skills for a specific career path', 120, 'Career',
                     NULL, NULL, NULL, NULL, NULL, NULL),
@@ -18,4 +18,4 @@ VALUES ('CREATE_LEARNING_PLAN', 'PLAN', '2022-01-01 10:00:00', NULL, 'Created a 
                    1, 'Introduction to Programming', 'This course covers the basics of programming concepts', 'John Smith', 40, NULL),
               ('COURSE_LEARNING_PROGRESS', 'PROGRESS', '2022-01-03 14:00:00', 30, 'Completed 30 minutes of the Introduction to Programming course',
                    2, 'Career Development', 'This plan is focused on developing skills for a specific career path', 120, 'Career',
-                   1, 'Introduction to Programming', 'This course covers the basics of programming concepts', 'John Smith', 40, '2022-01-03 14:30:00')   ;
+                   1, 'Introduction to Programming', 'This course covers the basics of programming concepts', 'John Smith', 40, 20)   ;
