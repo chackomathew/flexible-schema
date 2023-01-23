@@ -8,18 +8,15 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-@ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = Application.class)
 @ActiveProfiles("integration-tests")
 @Tag("integration-test")
@@ -28,10 +25,7 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 public class LearningActivityHistoryServiceIntegrationTest {
 
     @Container
-    private static final PostgreSQLContainer POSTGRES_SQL_CONTAINER = new PostgreSQLContainer("postgres:latest")
-            .withDatabaseName("postgres")
-            .withUsername("postgres")
-            .withPassword("password");
+    private static final PostgreSQLContainer POSTGRES_SQL_CONTAINER = new PostgreSQLContainer("postgres:latest");
 
     @BeforeAll
     static void startContainer() {
